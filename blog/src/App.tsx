@@ -12,7 +12,8 @@ import {
   createStyles,
 } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
-import { Link } from "react-router-dom";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -42,14 +43,23 @@ function App() {
             className={classes.menuButton}
           >
             {pathname !== "/" && (
-              <Link to="/">
+              <RouterLink to="/">
                 <HomeIcon color="action" />
-              </Link>
+              </RouterLink>
             )}
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             Material-Table Blog Code
           </Typography>
+          <IconButton
+            edge="end"
+            aria-label="github"
+            className={classes.menuButton}
+          >
+            <a href="https://github.com/Domino987/material-table-blog">
+              <GitHubIcon color="action" />
+            </a>
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Routes>
