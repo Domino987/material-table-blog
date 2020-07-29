@@ -12,6 +12,7 @@ function Main() {
       <header className="App-header">
         <List component="nav" aria-label="examples">
           <ListItemLink to="/CascadingDropdown" primary="Cascading Dropdown" />
+          <ListItemLink to="/GroupedActions" primary="Grouped Actions" />
         </List>
       </header>
     </div>

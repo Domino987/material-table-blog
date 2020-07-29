@@ -1,12 +1,7 @@
 import * as React from "react";
 import MaterialTable, { Column } from "material-table";
 import { Select, MenuItem } from "@material-ui/core";
-
-interface Data {
-  id: string;
-  country: string;
-  city: string;
-}
+import { Data, data } from "../utils";
 
 const Countries = ["Germany", "USA"];
 
@@ -59,19 +54,6 @@ const columns: Column<Data>[] = [
         ))}
       </Select>
     ),
-  },
-];
-
-const data: Data[] = [
-  {
-    id: "0",
-    country: "Germany",
-    city: "Aachen",
-  },
-  {
-    id: "1",
-    country: "USA",
-    city: "New York",
   },
 ];
 

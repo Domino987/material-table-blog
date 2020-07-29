@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Main } from "./Main";
 import { CascadingDropdown } from "./CascadingDropdown";
+import { GroupedActions } from "./GroupedActions";
 import { Routes, Route, useLocation } from "react-router";
 import {
   AppBar,
@@ -65,6 +66,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/CascadingDropdown" element={<CascadingDropdown />} />
+        <Route path="/GroupedActions" element={<GroupedActions />} />
         <Route path="/*" element={<Main />} />
       </Routes>
     </div>
